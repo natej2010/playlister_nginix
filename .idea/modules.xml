@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../game_night_sevice/.idea/game_night_sevice.iml" filepath="$PROJECT_DIR$/../game_night_sevice/.idea/game_night_sevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../game_service/.idea/game_service.iml" filepath="$PROJECT_DIR$/../game_service/.idea/game_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/nginix.iml" filepath="$PROJECT_DIR$/.idea/nginix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../user_service/.idea/user_service.iml" filepath="$PROJECT_DIR$/../user_service/.idea/user_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../web_front_end/.idea/web_front_end.iml" filepath="$PROJECT_DIR$/../web_front_end/.idea/web_front_end.iml" />
+    </modules>
+  </component>
+</project>

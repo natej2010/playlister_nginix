@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../game_night_sevice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../game_service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../user_service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../web_front_end" vcs="Git" />
+  </component>
+</project>
