@@ -1,37 +1,6 @@
 version: '3.7'
 
 services:
-  game_night:
-    build: ../game_night_sevice
-    container_name: game_night
-    restart: always
-    command: gunicorn --bind 0.0.0.0:5000 run:app
-    expose:
-      - 5000
-    env_file:
-      - ../game_night_sevice/.env
-
-  game:
-    build: ../game_service
-    container_name: game
-    restart: always
-    command: gunicorn --bind 0.0.0.0:5000 run:app
-    expose:
-      - 5000
-    env_file:
-      - ../game_service/.env
-
-  user:
-    build: ../user_service
-    container_name: user
-    restart: always
-    command: gunicorn --bind 0.0.0.0:5000 run:app
-    expose:
-      - 5000
-    env_file:
-      - ../user_service/.env
-    depends_on:
-      - couchbase
 
   web:
     build: ../web_front_end
@@ -48,18 +17,4 @@ services:
     ports:
       - 80:80
     depends_on:
-      - game_night
-      - user
-      - game
       - web
-
-  couchbase:
-    image: couchbase
-    container_name: couchbase
-    restart: always
-    expose:
-    - 8091-8094
-    - 11210
-    ports:
-    - 8091-8094:8091-8094
-    - 11210:11210
