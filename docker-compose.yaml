@@ -10,6 +10,16 @@ services:
     - "3000"
     command: ["npm", "start"]
 
+  spotify:
+    build: ../spotify_service
+    container_name: spotify
+    restart: always
+    command: gunicorn --bind 0.0.0.0:5000 run:app
+    expose:
+      - 5000
+    env_file:
+      - ../spotify_service/.env
+
   nginx:
     build: .
     container_name: nginx
